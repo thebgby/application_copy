@@ -16,12 +16,6 @@ git clone https://github.com/thebgby/application_copy.git
 cd copy_file_structure
 ```
 
-3. Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
 1. Create an input file (`input.txt`) with the following format:
