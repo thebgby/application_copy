@@ -1,6 +1,6 @@
 # Application Name and Content Updater
 
-This Python package provides a set of scripts to automate the process of updating application names in various files and directories. The primary use case is to facilitate the rebranding or renaming of an application by changing occurrences of the old application name to the new one. The package includes functionality to update file and folder names, file contents, and XML configuration files.
+This Python package provides a set of scripts to automate the process of updating application names in various files and directories. The primary use case is to facilitate the rebranding or renaming of an application by changing occurrences of the old application name to the new one. The package includes functionality to update file and folder names, file contents.
 
 ## Installation
 
@@ -40,7 +40,7 @@ Replace `/path/to/source`, `/path/to/destination`, `OldAppName`, and `NewAppName
 python main.py
 ```
 
-3. The script will read the input file, copy the contents from the source to the destination directory, update file and folder names, and modify file contents and XML configurations.
+3. The script will read the input file, copy the contents from the source to the destination directory, update file and folder names, and modify file contents.
 
 ## File Descriptions
 
@@ -49,8 +49,6 @@ python main.py
 - `change_file_content.py`: Contains a function to replace occurrences of the old application name with the new one in file contents.
 
 - `change_file_folder_name.py`: Defines a function to update file and folder names by replacing the old application name with the new one.
-
-- `change_xml_content.py`: Provides a function to modify XML configuration files by updating occurrences of the old application name with the new one.
 
 ## Contributing
 

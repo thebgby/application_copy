@@ -1,7 +1,6 @@
 #imports
 import os
 import shutil
-from change_xml_content import change_xml_content
 from change_file_content import change_file_content
 from change_file_folder_name import change_file_folder_name
 
@@ -28,10 +27,7 @@ def main(app_name, source_path, destination_dir, old_app_name): # Declare main f
     for root, dirs, files in os.walk(destination_path): # Loop through all files and folders in destination_path
         for file in files:                              # Loop through all files in destination_path
             file_path = os.path.join(root, file)        # Declare file_path variable
-            if file.endswith('.iashell') or file.endswith('.properties') or file.endswith('.yml'): # If file ends with '.iashell' or '.properties' or '.yml'
-                change_file_content(file_path, app_name, old_app_name)                             # Change file content
-
-    change_xml_content(destination_path, app_name, old_app_name) # Change xml content
+            change_file_content(file_path, app_name, old_app_name)                             # Change file content
 
 if __name__ == '__main__':
     main(app_name, source_path, destination_dir, old_app_name)
